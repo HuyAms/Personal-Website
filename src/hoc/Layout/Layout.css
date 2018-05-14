@@ -1,0 +1,16 @@
+.Body {
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.Header {
+    background-color: aqua;
+    flex: 30%;
+}
+
+.Content {
+    background-color: red;
+    flex: 70%;
+    height: 1550px;
+}
+
