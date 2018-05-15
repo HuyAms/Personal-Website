@@ -1,12 +1,35 @@
 .NavigationItem {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.NavigationItem a {
-
+.NavigationItem a:link,
+.NavigationItem a:visited{
+    text-decoration: none;
+    transition: color 0.2s;
+    border: 0;
+    color: #888;
 }
 
 .NavigationItem a:hover,
-.NavigationItem a:active,
 .NavigationItem a.active {
+    color: #ffffff;
+}
 
+@media only screen and (max-width: 1023px) {
+    .NavigationItem {
+        margin-bottom: 0px;
+        display: inline-block;
+        margin-right: 20px;
+        border-bottom: 1px #ffffff;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .NavigationItem {
+        margin-bottom: 25px;
+        margin-right: 0px;
+        display: block;
+    }
 }

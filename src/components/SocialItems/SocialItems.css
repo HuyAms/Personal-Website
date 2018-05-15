@@ -1,0 +1,58 @@
+.SocialItems {
+    list-style: none;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.Github,
+.LinkedIn {
+    display: inline-block;
+}
+
+.LinkedIn {
+    margin-right: 40px;
+}
+
+.Github a:link,
+.Github a:visited,
+.LinkedIn a:link,
+.LinkedIn a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+    font-size: 2.5em;
+}
+
+.LinkedIn a:hover{
+    color: #4875B4;
+}
+
+.Github a:hover{
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1023px) {
+    .SocialItems {
+        margin-left: 20px;
+        width: auto;
+        order: 1;
+    }
+
+    .Github a:link,
+    .Github a:visited,
+    .LinkedIn a:link,
+    .LinkedIn a:visited{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .SocialItems {
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+        margin-bottom: 50px;
+    }
+}
+
