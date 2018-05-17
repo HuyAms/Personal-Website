@@ -1,0 +1,96 @@
+.ProjectsContent {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.ProjectsContent::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.ProjectImg {
+    object-fit: contain;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    max-width: 90%;
+    max-height: 500px;
+}
+
+.Project:before {
+    content: "";
+    width: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.ProjectType {
+    font-style: italic;
+}
+
+.Project h2 {
+    margin-bottom: 5px;
+}
+
+.Project p {
+    margin-bottom: 20px;
+}
+
+.Project ul {
+    list-style: none;
+}
+
+.Project ul li {
+    margin-bottom: 10px;
+}
+
+.Project ul li:before {
+    content: "- ";
+}
+
+.Button {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.Button:link,
+.Button:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #191919;
+    color: #191919;
+}
+
+.Button:hover,
+.Button:active {
+    background-color: #191919;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .ProjectImg {
+        float: none;
+    }
+
+    .Button {
+        position: static;
+    }
+
+    .Project ul {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ProjectImg {
+        margin-bottom: 30px;
+        max-width: 100%;
+        max-height: 350px;
+    }
+}

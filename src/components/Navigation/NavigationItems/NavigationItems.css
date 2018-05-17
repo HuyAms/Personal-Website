@@ -13,8 +13,6 @@
 
 @media only screen and (max-width: 767px) {
     .NavigationItems {
-        width: 200px;
-        margin: 0 auto;
         text-align: center;
     }
 }

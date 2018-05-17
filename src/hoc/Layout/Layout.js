@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Aux from '../ReactAux/ReactAux';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SocialItems from '../../components/SocialItems/SocialItems';
-import classes from './Layout.css'
+import classes from './Layout.css';
 
 class Layout extends Component {
   render() {
@@ -12,11 +11,11 @@ class Layout extends Component {
             <Toolbar/>
             <SocialItems/>
           </header>
-          <main className={classes.Content}>
+          <main className={classes.Main}>
             {this.props.children}
           </main>
         </div>
-    )
+    );
   }
 }
 

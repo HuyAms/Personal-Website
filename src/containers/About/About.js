@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-class Skills extends Component {
+class About extends Component {
   render() {
     return (
         <section>
-          <h1>This is the skills page</h1>
+          <h1>This is the about page</h1>
         </section>
     )
   }
 }
 
-export default Skills;
+export default About;
