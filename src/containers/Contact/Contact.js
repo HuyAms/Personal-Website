@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
+import Contact from '../../components/Contact/Contact';
+
 class Contract extends Component {
+
+  // static defaultProps = {
+  //   center: {
+  //     lat: 60.220554,
+  //     lng: 24.778523
+  //   },
+  //   zoom: 11
+  // };
+
   render() {
     return (
-        <section>
-          <h1>This is the contact page</h1>
-        </section>
-    )
+      <Contact/>
+    );
   }
 }
 

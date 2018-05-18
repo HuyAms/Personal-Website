@@ -1,11 +1,12 @@
 import React from 'react';
 import classes from './Project.css';
+import Button from '../../../components/UI/Button/Button';
 
 const project = (props) => {
   let features = null;
   if (props.features) {
     features = props.features.map((feature, index) => (
-      <li key={index}>{feature}</li>
+      <li key={feature}>{feature}</li>
     ))
   }
 
@@ -24,7 +25,9 @@ const project = (props) => {
             <ul>
               {features}
             </ul>
-            <a className={classes.Button} target="_blank" rel="noopener" href={props.link}>Detail</a>
+            <div className={classes.Button}>
+              <Button  link={props.link} target="_blank">Detail</Button>
+            </div>
           </div>
         </section>
   )

@@ -4,13 +4,38 @@
     position: relative;
 }
 
+@media only screen and (orientation: portrait) {
+    .ProfileContent {
+        height: 100vh;
+    }
+}
+
 .Profile {
     margin-top: 50px;
-    float:left;
+    float: left;
+}
+
+.Profile p {
+    margin-bottom: 10px;
 }
 
 .Profile h1 {
     font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.Profile a:link,
+.Profile a:visited {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.2s;
+    font-weight: bold;
+    display: block;
+}
+
+.Profile a:hover,
+.Profile a:active {
+    color: #000000;
 }
 
 .ProfileImage {
@@ -34,9 +59,10 @@
     .ProfileContent {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-items: center;
         height: auto;
         position: static;
+        padding-bottom: 0px;
     }
 
     .Profile {
@@ -55,9 +81,14 @@
 
     .Profile h1,
     .Profile h2,
-    .Profile p{
+    .Profile p {
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    .ProfileContent a:link,
+    .ProfileContent a:visited {
+        text-align: center;
     }
 
     .Profile h1 {

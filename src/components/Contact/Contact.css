@@ -1,0 +1,48 @@
+.ContactContent {
+    height: 100vh;
+}
+
+.Map {
+    border: 5px solid #ffffff;
+    width: 500px;
+    height: 350px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.ContactInfo {
+    margin-bottom: 30px;
+}
+
+.ContactInfo p {
+    margin-bottom: 10px;
+}
+
+.ContactInfo p span {
+    font-weight: bold;
+}
+
+.ContactInfo a {
+    text-decoration: none;
+    color: #4875B4;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .ContactContent {
+        height: auto;
+    }
+
+    .Map {
+        width: 350px;
+        height: 235px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Map {
+        width: 250px;
+        height: 175px;
+        border: 2px solid #ffffff;
+    }
+}
