@@ -42,11 +42,14 @@
     opacity: 1;
 }
 
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
     .TechnicalSkillsContent {
         height: auto;
     }
+}
+
+
+@media only screen and (max-width: 768px) {
 
     .TechnicalSkills {
         grid-template-columns: 1fr 1fr;

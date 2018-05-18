@@ -48,20 +48,16 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .VideoContent {
-    }
-
     .HobbyContent {
         justify-content: flex-start;
     }
 
-}
-
-@media only screen and (max-width: 767px) {
     .HobbyContent {
         height: auto;
     }
+
 }
+
 
 @media only screen and (max-width: 480px) {
 

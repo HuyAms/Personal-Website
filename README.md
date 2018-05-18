@@ -2362,7 +2362,7 @@ If you run `npm test` and the console gets stuck after printing `react-scripts t
 
 We recommend deleting `node_modules` in your project and running `npm install` (or `yarn` if you use it) first. If it doesn't help, you can try one of the numerous workarounds mentioned in these issues:
 
-* [facebook/jest#1767](https://github.com/facebook/jest/issues/1767)
+* [facebook/jest#1768](https://github.com/facebook/jest/issues/1768)
 * [facebook/watchman#358](https://github.com/facebook/watchman/issues/358)
 * [ember-cli/ember-cli#6259](https://github.com/ember-cli/ember-cli/issues/6259)
 
