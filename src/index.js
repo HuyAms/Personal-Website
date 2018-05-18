@@ -9,11 +9,13 @@ import {Provider} from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import thunk from 'redux-thunk';
 import projectReducer from './store/reducer/project';
+import infoReducer from './store/reducer/info';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-  projectReducer: projectReducer
+  infoReducer: infoReducer,
+  projectReducer: projectReducer,
 })
 
 const store = createStore(rootReducer, composeEnhancers(

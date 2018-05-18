@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import SocialItems from '../../components/SocialItems/SocialItems';
+import SocialItems from '../../components/Navigation/SocialItems/SocialItems';
 import classes from './Layout.css';
 
 class Layout extends Component {
