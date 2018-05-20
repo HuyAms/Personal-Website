@@ -10,6 +10,7 @@ import registerServiceWorker from './registerServiceWorker';
 import thunk from 'redux-thunk';
 import projectReducer from './store/reducer/project';
 import infoReducer from './store/reducer/info';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -25,7 +26,9 @@ const store = createStore(rootReducer, composeEnhancers(
 const app = (
     <Provider store={store}>
       <BrowserRouter>
+        <ScrollToTop>
         <App/>
+        </ScrollToTop>
       </BrowserRouter>
     </Provider>
 );

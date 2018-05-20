@@ -13,11 +13,6 @@
     margin-bottom: 10px;
 }
 
-.Profile h1 {
-    font-size: 4em;
-    margin-bottom: 50px;
-}
-
 .Profile a:link,
 .Profile a:visited {
     text-decoration: none;
@@ -48,10 +43,18 @@
     }
 }
 
+
 @media only screen and (max-width: 1024px)
 and (orientation: portrait) {
     .ProfileContent {
         height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ProfileImage {
+        width: 300px;
+        min-width: unset;
     }
 }
 
@@ -67,7 +70,7 @@ and (orientation: portrait) {
     }
 
     .Profile {
-        margin-top: 25px;
+        margin-top: 0px;
         margin-left: 0px;
         min-width: 300px;
     }
@@ -84,19 +87,10 @@ and (orientation: portrait) {
     .Profile h2,
     .Profile p {
         text-align: center;
-        margin-bottom: 10px;
     }
 
     .ProfileContent a:link,
     .ProfileContent a:visited {
         text-align: center;
-    }
-
-    .Profile h1 {
-        font-size: 2em;
-    }
-
-    .Profile h2 {
-        font-size: 1.3em;
     }
 }

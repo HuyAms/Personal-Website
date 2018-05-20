@@ -21,7 +21,7 @@
 
 .TechnicalSkills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     grid-gap: 2em;
 }
@@ -45,6 +45,10 @@
 @media only screen and (max-width: 1024px) {
     .TechnicalSkillsContent {
         height: auto;
+    }
+
+    .TechnicalSkills {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

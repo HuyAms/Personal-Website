@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Projects.css';
 import Project from '../../components/Projects/Project/Project';
+import Slide from 'react-reveal/Slide';
 
 const projects = (props) => {
 
@@ -16,12 +17,14 @@ const projects = (props) => {
                   link={project.link}
                   type={project.type}
               />
-      ));
+          ));
 
   return (
-      <div className={classes.ProjectsContent}>
-        {projects}
-      </div>
+      <Slide right delay={200} duration={2000}>
+        <div className={classes.ProjectsContent}>
+          {projects}
+        </div>
+      </Slide>
   );
 };
 

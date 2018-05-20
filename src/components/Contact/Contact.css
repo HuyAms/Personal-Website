@@ -22,9 +22,16 @@
     font-weight: bold;
 }
 
-.ContactInfo a {
+.ContactInfo a:link,
+.ContactInfo a:visited {
     text-decoration: none;
-    color: #4875B4;
+    color: #5f87bf;
+    transition: color 0.2s;
+}
+
+.ContactInfo a:active,
+.ContactInfo a:hover {
+    color: #3e659c;
 }
 
 @media only screen and (max-width: 1024px) {
