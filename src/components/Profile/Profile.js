@@ -17,7 +17,6 @@ const profile = (props) => {
         </Fade>
         <img className={classes.ProfileImage} src={profileImg}
              alt="huytrinh"/>
-
       </section>
   );
 };

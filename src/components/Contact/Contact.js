@@ -10,10 +10,10 @@ const contact = (props) => {
         <Fade delay={200} top>
         <div className={classes.ContactInfo}>
           <h1>Contact</h1>
-          <p><span>Address:</span> Kilonrinne 10F 140, 02610, Espoo, Finland</p>
-          <p><span>Email:</span> dinhhuyams@gmail.com</p>
+          <p><span>Address: </span>{props.myInfo.address.address}</p>
+          <p><span>Email:</span> {props.myInfo.mail}</p>
           <p><span>LinkedIn:</span>
-            <a href="https://www.linkedin.com/in/huy-trinh-dinh-253534131/"
+            <a href={props.myInfo.linkedIn}
                target="_blank" rel="noopener noreferrer"> Huy Trinh Dinh</a>
           </p>
         </div>
@@ -23,12 +23,11 @@ const contact = (props) => {
             title="map"
             className={classes.Map}
             frameBorder="0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBj8I0ktP0lHiUHftiJwgkf3D6DvjWJJ5g
-    &q=Kilonrinne+10" allowFullScreen>
+            src={props.myInfo.address.mapLink} allowFullScreen>
         </iframe>
         </Zoom>
         <Fade delay={200} bottom>
-        <Button link="mailto:dinhhuyams@gmail.com" target="_top">Contact Me</Button>
+        <Button link={"mailto:" + props.myInfo.mail} target="_top">Contact Me</Button>
         </Fade>
       </section>
   );

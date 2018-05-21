@@ -1,5 +1,5 @@
 .ContactContent {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .Map {
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 1024px) {
     .ContactContent {
-        height: auto;
+        min-height: unset;
     }
 }
 

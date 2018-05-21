@@ -41,6 +41,10 @@
         width: 430px;
         height: auto;
     }
+
+    .Profile {
+        margin-top: 0px;
+    }
 }
 
 
@@ -51,14 +55,8 @@ and (orientation: portrait) {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .ProfileImage {
-        width: 300px;
-        min-width: unset;
-    }
-}
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 
     .ProfileContent {
         display: flex;
