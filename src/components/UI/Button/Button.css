@@ -1,16 +1,48 @@
-.Button:link,
-.Button:visited {
+.Button {
     display: inline-block;
-    padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    background-color: transparent;
+}
+
+.Button:focus {
+    outline: 0;
+}
+
+.Button:disabled {
+    cursor: not-allowed;
+}
+
+.Normal {
+    padding: 10px 30px;
+}
+
+.Small {
+    padding: 5px 15px;
+    font-size: 0.9em;
+}
+
+.Dark {
     border: 1px solid #191919;
     color: #191919;
 }
 
-.Button:hover,
-.Button:active {
+.Dark:active,
+.Dark:hover {
     background-color: #191919;
-    color: white;
+    color: #ffffff;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.Light {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.Light:active,
+.Light:hover {
+    background-color: #ffffff;
+    color: #191919;
+    transition: color 0.2s, background-color 0.2s;
 }

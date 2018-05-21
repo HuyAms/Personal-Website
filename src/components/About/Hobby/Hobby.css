@@ -2,7 +2,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../../../assets/images/magic.jpg") ;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
     color: #ffffff;
     display: flex;
@@ -22,10 +22,6 @@
 
 .VideoContent iframe{
     margin: 0px 30px 30px 0px;
-}
-
-.VideoContent iframe:last-child {
-    margin-right: 0px;
 }
 
 .HobbyContent h2 {
@@ -53,7 +49,7 @@
     }
 
     .HobbyContent {
-        height: auto;
+        min-height: unset;
     }
 
 }

@@ -15,29 +15,30 @@ const reducer = (state = initialState, action) => {
       return fetchInfoFail(state, action);
     case actionTypes.FETCH_INFO_SUCCESS:
       return fetchInfoSuccess(state, action);
+    default:
+      return state;
   }
-  return state;
-}
+};
 
 const fetchInfoStart = (state, action) => {
   return updateObject(state, {
     error: null,
-    loading: true
-  })
-}
+    loading: true,
+  });
+};
 
 const fetchInfoFail = (state, action) => {
   return updateObject(state, {
     error: action.error,
-    loading: false
-  })
-}
+    loading: false,
+  });
+};
 
 const fetchInfoSuccess = (state, action) => {
   return updateObject(state, {
     loading: false,
-    myInfo: updateObject(state.myInfo, action.myInfo)
-  })
-}
+    myInfo: updateObject(state.myInfo, action.myInfo),
+  });
+};
 
 export default reducer;

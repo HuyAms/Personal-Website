@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Contact.css';
-import Button from '../../components/UI/Button/Button';
+import Button from '../UI/ButtonLink/ButtonLink';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
@@ -14,12 +14,13 @@ const contact = (props) => {
           <p><span>Email:</span> dinhhuyams@gmail.com</p>
           <p><span>LinkedIn:</span>
             <a href="https://www.linkedin.com/in/huy-trinh-dinh-253534131/"
-               target="_blank" rel="noopener"> Huy Trinh Dinh</a>
+               target="_blank" rel="noopener noreferrer"> Huy Trinh Dinh</a>
           </p>
         </div>
         </Fade>
         <Zoom delay={1000}>
         <iframe
+            title="map"
             className={classes.Map}
             frameBorder="0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBj8I0ktP0lHiUHftiJwgkf3D6DvjWJJ5g

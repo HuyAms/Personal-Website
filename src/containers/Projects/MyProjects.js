@@ -8,7 +8,7 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 class MyProjects extends Component {
 
   componentDidMount() {
-    if (this.props.projects.length == 0) {
+    if (this.props.projects.length === 0) {
       this.props.onFetchProject();
     }
   }

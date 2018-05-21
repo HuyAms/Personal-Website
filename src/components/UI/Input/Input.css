@@ -1,0 +1,33 @@
+.Label {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.Input {
+    margin-bottom: 15px;
+}
+
+.TextArea {
+    height: 100px;
+}
+
+.InputElement {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+    line-height: 140%;
+    color: #444;
+}
+
+.Invalid {
+    border: 1px solid #f66;
+}
+
+.InvalidAlert {
+    font-size: 0.7em;
+    color: #f66;
+    margin-bottom: 15px;
+}

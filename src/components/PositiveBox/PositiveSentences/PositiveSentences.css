@@ -1,0 +1,17 @@
+.PositiveSentences {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width: 768px)  {
+    .PositiveSentences {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px)  {
+    .PositiveSentences {
+        grid-template-columns: 1fr;
+    }
+}

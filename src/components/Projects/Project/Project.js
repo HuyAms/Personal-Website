@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Project.css';
-import Button from '../../../components/UI/Button/Button';
+import Button from '../../UI/ButtonLink/ButtonLink';
 
 const project = (props) => {
   let features = null;
@@ -26,7 +26,7 @@ const project = (props) => {
               {features}
             </ul>
             <div className={classes.Button}>
-              <Button  link={props.link} target="_blank">Detail</Button>
+              <Button link={props.link} target="_blank">Detail</Button>
             </div>
           </div>
         </section>

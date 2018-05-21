@@ -3,9 +3,8 @@ import classes from './Button.css';
 
 const button = (props) => {
   return (
-        <a className={classes.Button} target={props.target} rel="noopener" href={props.link}>{props.children}</a>
+      <button disabled={props.disabled} onClick={props.clicked} className={[classes.Button, classes[props.btnTheme], classes[props.btnType]].join(' ')}>{props.children}</button>
   )
 }
-
 
 export default button;

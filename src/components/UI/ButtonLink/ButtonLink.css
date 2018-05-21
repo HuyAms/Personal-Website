@@ -1,0 +1,17 @@
+.Button:link,
+.Button:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #191919;
+    color: #191919;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.Button:hover,
+.Button:active {
+    background-color: #191919;
+    color: white;
+}

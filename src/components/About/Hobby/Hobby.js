@@ -16,14 +16,17 @@ const hobby = (props) => {
           <div className={classes.VideoContent}>
             <Reveal effect="pulse" delay={1600} count={2}>
               <iframe width="266" height="150"
+                      title="video1"
                       src={props.hobbies.magic[0]} frameBorder="0"
                       allow="autoplay; encrypted-media"
                       allowFullScreen></iframe>
             </Reveal>
             <iframe width="266" height="150"
+                    title="video2"
                     src={props.hobbies.magic[1]} frameBorder="0"
                     allow="autoplay; encrypted-media" allowFullScreen></iframe>
             <iframe width="266" height="150"
+                    title="video3"
                     src={props.hobbies.magic[2]} frameBorder="0"
                     allow="autoplay; encrypted-media" allowFullScreen></iframe>
           </div>

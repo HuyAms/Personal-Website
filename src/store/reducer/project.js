@@ -15,8 +15,9 @@ const reducer = (state = initialState, action) => {
       return fetchProjectFail(state, action);
     case actionTypes.FETCH_PROJECTS_SUCCESS:
       return fetchProjectSuccess(state, action);
+    default:
+      return state;
   }
-  return state;
 }
 
 const fetchProjectStart = (state, action) => {

@@ -1,0 +1,96 @@
+.PositiveBoxContent {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/images/positive.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.PositiveBoxContent h2,
+.PositiveBoxContent h3{
+    color: #ffffff;
+}
+
+.PositiveBoxContent h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.PositiveBoxContent h3 {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.PositiveBoxContent h2:after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.PositiveForm {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 10px;
+    padding: 2%;
+    position: relative;
+}
+
+
+.ButtonDanger {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    color: #f44;
+    border: 0px;
+    transform: scale(1.15);
+    transition: transform 0.2s;
+}
+
+.ButtonDanger:hover {
+    transform: scale(1);
+}
+
+.ButtonDanger:focus {
+    outline: 0;
+}
+
+.Button {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .PositiveBoxContent {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .PositiveForm {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .PositiveForm {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .PositiveBoxContent h3 {
+        margin-bottom: 20px;
+    }
+
+    .Button {
+        margin-bottom: 20px;
+    }
+}
+
+
+
