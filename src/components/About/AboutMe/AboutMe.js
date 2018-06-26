@@ -1,17 +1,13 @@
 import classes from './AboutMe.css';
 import React from 'react';
-import Reveal from 'react-reveal/Reveal';
 
 const aboutme = (props) => {
   return (
       <section className={classes.AboutContent}>
-        <Reveal effect="fadeInUp">
           <div className={classes.About}>
             <h1>About</h1>
             <p>{props.about}</p>
           </div>
-        </Reveal>
-        <Reveal effect="fadeInUp">
           <div className={classes.Education}>
             <h2>Education</h2>
             <div>
@@ -26,8 +22,6 @@ const aboutme = (props) => {
               <p>Major: Physics</p>
             </div>
           </div>
-        </Reveal>
-        <Reveal effect="fadeInUp">
           <div className={classes.Languages}>
             <h2>Languages</h2>
             <div>
@@ -39,7 +33,6 @@ const aboutme = (props) => {
               <p>Professional working proficiency</p>
             </div>
           </div>
-        </Reveal>
       </section>
   );
 };

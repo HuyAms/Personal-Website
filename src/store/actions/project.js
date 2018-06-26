@@ -21,6 +21,13 @@ export const fetchProjectsStart = () => {
   }
 }
 
+export const setProjectFilter = (filter) => {
+  return {
+    type: actionTypes.SET_PROJECT_FILTER,
+    filter: filter
+  }
+}
+
 export const fetchProject = () => {
   return dispatch => {
     dispatch(fetchProjectsStart());

@@ -7,7 +7,6 @@ import Zoom from 'react-reveal/Zoom';
 const contact = (props) => {
   return (
       <section  className={classes.ContactContent}>
-        <Fade delay={200} top>
         <div className={classes.ContactInfo}>
           <h1>Contact</h1>
           <p><span>Address: </span>{props.myInfo.address.address}</p>
@@ -17,18 +16,13 @@ const contact = (props) => {
                target="_blank" rel="noopener noreferrer"> Huy Trinh Dinh</a>
           </p>
         </div>
-        </Fade>
-        <Zoom delay={1000}>
         <iframe
             title="map"
             className={classes.Map}
             frameBorder="0"
             src={props.myInfo.address.mapLink} allowFullScreen>
         </iframe>
-        </Zoom>
-        <Fade delay={200} bottom>
         <Button link={"mailto:" + props.myInfo.mail} target="_top">Contact Me</Button>
-        </Fade>
       </section>
   );
 };

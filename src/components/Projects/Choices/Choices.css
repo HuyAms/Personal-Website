@@ -1,0 +1,46 @@
+.ChoicesContainer {
+}
+
+.Choices {
+    /*background-color: red;*/
+    width: 250px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1.2px black solid;
+    padding: 20px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.Choices:hover, .ChoicesActive {
+    color: white;
+    background-color: black;
+}
+
+
+.Options {
+    width: 250px;
+    list-style: none;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+
+.Option {
+    padding: 10px 20px;
+    transition: color 0.2s;
+    cursor: pointer;
+    color: #888;
+}
+
+.Option:hover {
+    color: black;
+}
+
+.ChoiceLabel {
+}
+
+.DropDownIcon {
+    font-size: 1.2em;
+}

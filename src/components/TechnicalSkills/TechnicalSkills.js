@@ -12,13 +12,11 @@ import Swift from '../../assets/images/swift.png';
 import TypeScript from '../../assets/images/typescript.png';
 import Ionic from '../../assets/images/ionic.png';
 import ReactLogo from '../../assets/images/react.png';
-import Zoom from 'react-reveal/Zoom';
 
 const technicalSkills = () => {
   return (
       <section className={classes.TechnicalSkillsContent}>
         <h2>Technical Skills</h2>
-        <Zoom delay={200}>
           <div className={classes.TechnicalSkills}>
             <figure>
               <img src={Android} alt="Android"/>
@@ -69,7 +67,6 @@ const technicalSkills = () => {
               <p>Swift</p>
             </figure>
           </div>
-        </Zoom>
       </section>
   );
 };

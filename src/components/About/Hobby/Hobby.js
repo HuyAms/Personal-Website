@@ -6,12 +6,10 @@ const hobby = (props) => {
   console.log('VIDEO: ', props.hobbies.magic[0]);
   return (
       <section className={classes.HobbyContent}>
-        <Reveal effect="fadeInRight" duration={1500}>
           <div>
             <h2>Hobbies</h2>
             <p>{props.hobbies.description}</p>
           </div>
-        </Reveal>
         <Reveal effect="fadeInUp">
           <div className={classes.VideoContent}>
             <Reveal effect="pulse" delay={1600} count={2}>

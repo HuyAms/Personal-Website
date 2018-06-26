@@ -1,5 +1,6 @@
 export {
-  fetchProject
+  fetchProject,
+  setProjectFilter
 } from './project';
 
 export {
