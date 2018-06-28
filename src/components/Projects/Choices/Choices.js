@@ -41,7 +41,7 @@ class Choices extends Component {
         <section className={classes.ChoicesContainer}
                  onClick={this.toggle}>
           <div className={this.choiceClass.join(' ')}>
-            <div className={classes.ChoiceLabel}>{options[this.props.activeFilterIndex].label} Projects</div>
+            <div className={classes.ChoiceLabel}>{options[this.props.activeFilterIndex].label} Projects ({this.props.numberOfProjects})</div>
             <div className={classes.DropDownIcon}>
               <i className="ion-ios-arrow-down"></i>
             </div>

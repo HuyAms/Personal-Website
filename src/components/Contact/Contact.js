@@ -1,8 +1,6 @@
 import React from 'react';
 import classes from './Contact.css';
 import Button from '../UI/ButtonLink/ButtonLink';
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 
 const contact = (props) => {
   return (

@@ -33,7 +33,7 @@ class MyProjects extends Component {
     return (
         <Aux>
           <div>
-            <Choices clicked={this.choiceHandler} activeFilterIndex={this.props.activeFilterIndex}/>
+            <Choices clicked={this.choiceHandler} numberOfProjects={this.props.projects.length} activeFilterIndex={this.props.activeFilterIndex}/>
           </div>
           {projects}
         </Aux>

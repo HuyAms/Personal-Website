@@ -21,6 +21,8 @@ export const getVisibleProjects = createSelector(
           return projects.filter(project => project.type === 'Ionic');
         case 6:
           return projects.filter(project => project.type === 'Web-app');
+        default:
+          return projects
       }
     },
 );
