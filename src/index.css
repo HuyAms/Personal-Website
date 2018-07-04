@@ -8,10 +8,10 @@ html,
 body {
   background-color: #f4f4f4;
   color: #555;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 145%;
+  line-height: 160%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
