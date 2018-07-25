@@ -1,15 +1,16 @@
 export {
-  fetchProject,
-  setProjectFilter
+    fetchProject,
+    setProjectFilter,
+    setProjectSearch
 } from './project';
 
 export {
-  fetchInfo
+    fetchInfo
 } from './info';
 
 export {
-  postPositives,
-  fetchPositive,
-  openPositiveForm,
-  closePositiveForm
+    postPositives,
+    fetchPositive,
+    openPositiveForm,
+    closePositiveForm
 } from './positivebox';

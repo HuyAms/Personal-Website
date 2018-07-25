@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import classes from './Choices.css';
 import onClickOutSide from 'react-onclickoutside';
+import Aux from '../../../hoc/ReactAux/ReactAux';
 
 const options = [
   {label: 'All', type: 'all'},
@@ -38,7 +39,7 @@ class Choices extends Component {
     }
 
     return (
-        <section className={classes.ChoicesContainer}
+        <div className={classes.ChoicesContainer}
                  onClick={this.toggle}>
           <div className={this.choiceClass.join(' ')}>
             <div className={classes.ChoiceLabel}>{options[this.props.activeFilterIndex].label} Projects ({this.props.numberOfProjects})</div>
@@ -55,7 +56,7 @@ class Choices extends Component {
               }
             </ul>
           }
-        </section>
+        </div>
     );
   }
 }

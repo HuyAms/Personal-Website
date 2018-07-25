@@ -44,3 +44,13 @@
 .DropDownIcon {
     font-size: 1.2em;
 }
+
+
+/*Small phones to small tablets*/
+@media only screen and (max-width: 480px) {
+
+    .Choices {
+        text-align: center;
+        width: 100%;
+    }
+}
