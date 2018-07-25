@@ -1,0 +1,40 @@
+.NoResultImage {
+    height: 300px;
+    width: auto;
+}
+
+.NoResultContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*Small phones to small tablets*/
+@media only screen and (max-width: 768px) {
+
+    .NoResultContainer {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .NoResultImage {
+        height: 200px;
+        width: auto;
+    }
+
+}
+
+/*Small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+    .NoResultContainer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .NoResultImage {
+        height: 100px;
+        width: auto;
+    }
+
+}

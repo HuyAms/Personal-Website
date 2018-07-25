@@ -8,6 +8,7 @@ import Choices from '../../components/Projects/Choices/Choices';
 import Search from '../../components/Projects/Search/Search';
 import {getVisibleProjects} from '../../selectors';
 import classes from './MyProjects.css';
+import NoResult from '../../components/Projects/NoResult/NoResult';
 
 class MyProjects extends Component {
 
@@ -30,7 +31,11 @@ class MyProjects extends Component {
 
         if (!this.props.loading) {
             if (!this.props.error) {
-                projects = <Projects projects={this.props.projects}/>;
+                if (this.props.projects.length == 0) {
+                    projects = <NoResult/>
+                } else {
+                    projects = <Projects projects={this.props.projects}/>;
+                }
             } else {
                 projects = <p>Fail to load projects</p>
             }
