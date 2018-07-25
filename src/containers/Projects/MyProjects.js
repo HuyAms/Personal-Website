@@ -46,7 +46,7 @@ class MyProjects extends Component {
                 <section className={classes.Filter}>
                     <Choices clicked={this.choiceHandler} numberOfProjects={this.props.projects.length}
                              activeFilterIndex={this.props.activeFilterIndex}/>
-                    <Search onChanged={this.searchHandler} value={this.props.searchValue}/>
+                    <Search onChanged={this.searchHandler} searchValue={this.props.searchValue}/>
                 </section>
                 {projects}
             </Aux>
