@@ -1,0 +1,39 @@
+.H2ON32 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.H2ON32Image {
+    height: auto;
+    width: 30%;
+}
+
+/*Small phones to small tablets*/
+@media only screen and (max-width: 768px) {
+
+    .H2ON32 {
+        margin: 30px;
+    }
+
+    .H2ON32Image {
+        height: auto;
+        width: 40%;
+    }
+
+}
+
+/*Small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+    .H2ON32 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .H2ON32Image {
+        height: auto;
+        width: 70%;
+    }
+
+}
