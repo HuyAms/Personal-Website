@@ -1,27 +1,27 @@
 import * as actionTypes from './actionTypes';
 import axios from '../../axious';
 
-export const fetchPositiveSuccess = (positives) => {
+const fetchPositiveSuccess = (positives) => {
   return {
     type: actionTypes.FETCH_POSITIVE_SUCCESS,
     positives: positives,
   };
 };
 
-export const fetchPositiveFail = (error) => {
+const fetchPositiveFail = (error) => {
   return {
     type: actionTypes.FETCH_POSITIVE_FAIL,
     error: error,
   };
 };
 
-export const fetchPositiveStart = () => {
+const fetchPositiveStart = () => {
   return {
     type: actionTypes.FETCH_POSITIVE_START,
   };
 };
 
-export const postPositiveSuccess = (positiveData, id) => {
+const postPositiveSuccess = (positiveData, id) => {
   return {
     type: actionTypes.POST_POSITIVE_SUCCESS,
     positiveData: positiveData,
@@ -29,14 +29,14 @@ export const postPositiveSuccess = (positiveData, id) => {
   };
 };
 
-export const postPositiveFail = (error) => {
+const postPositiveFail = (error) => {
   return {
     type: actionTypes.POST_POSITIVE_FAIL,
     error: error,
   };
 };
 
-export const postPositiveStart = () => {
+const postPositiveStart = () => {
   return {
     type: actionTypes.POST_POSITIVE_START,
   };

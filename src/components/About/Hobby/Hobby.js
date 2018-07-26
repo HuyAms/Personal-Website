@@ -3,7 +3,6 @@ import React from 'react';
 import Reveal from 'react-reveal/Reveal';
 
 const hobby = (props) => {
-  console.log('VIDEO: ', props.hobbies.magic[0]);
   return (
       <section className={classes.HobbyContent}>
           <div>

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Choices.css';
 import onClickOutSide from 'react-onclickoutside';
-import Aux from '../../../hoc/ReactAux/ReactAux';
 
 const options = [
   {label: 'All', type: 'all'},

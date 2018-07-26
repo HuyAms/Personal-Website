@@ -31,7 +31,7 @@ class MyProjects extends Component {
 
         if (!this.props.loading) {
             if (!this.props.error) {
-                if (this.props.projects.length == 0) {
+                if (this.props.projects.length === 0) {
                     projects = <NoResult/>
                 } else {
                     projects = <Projects projects={this.props.projects}/>;

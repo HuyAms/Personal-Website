@@ -2,26 +2,54 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.AboutContent div {
-    margin-bottom: 20px;
+.About {
+    margin-bottom: 60px;
 }
 
+.Experience {
+    width: 80%;
+    margin-bottom: 60px;
+}
 
-.Education div,
+.Experience .Subtitle{
+    color: #1a1a1a;
+}
+
+.Experience .Note {
+    font-size: 0.9em;
+}
+
+.Timeline {
+    background-color: #f4f4f4;
+    height: 100px;
+    margin: 0 auto;
+}
+
 .Languages div {
     margin-bottom: 10px;
 }
 
-.Education p:last-child {
-    font-style: italic;
-}
 
 @media only screen and (max-width: 1024px) {
     .AboutContent {
         min-height: unset;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Timeline {
+        width: 100%;
+    }
+
+    .About {
+        margin-bottom: 40px;
+    }
+
+    .Experience {
+        width: 100%;
+        margin-bottom: 40px;
     }
 
 }

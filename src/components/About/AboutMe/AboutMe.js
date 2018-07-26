@@ -1,29 +1,61 @@
 import classes from './AboutMe.css';
-import React from 'react';
+import React, {Component} from 'react';
+import HorizontalTimeline from 'react-horizontal-timeline';
 
-const aboutme = (props) => {
-  return (
-      <section className={classes.AboutContent}>
+
+class AboutMe extends Component {
+
+
+  state = {value: this.props.workExps.length - 1, previous: 0};
+
+  renderDuration() {
+    let {workExps} = this.props
+    let duration = null
+    if (workExps[this.state.value].duration) {
+      duration = (<p className={classes.Note}>{workExps[this.state.value].starting} - {workExps[this.state.value].ending}&nbsp;&nbsp;•&nbsp;&nbsp;{workExps[this.state.value].duration}<br/></p>)
+    } else {
+      duration = (<p className={classes.Note}>{workExps[this.state.value].starting} - {workExps[this.state.value].ending}<br/></p>)
+    }
+    return duration
+  }
+
+  render() {
+    let {workExps} = this.props
+    let DATES = [];
+    let timelineStyles = {background: '#f4f4f4', foreground: '#7b9d6f', outline: '#dfdfdf'};
+    if (workExps != null) {
+      DATES = workExps.map((workExp) => workExp.date)
+    }
+
+    return (
+        <section className={classes.AboutContent}>
           <div className={classes.About}>
             <h1>About</h1>
-            <p>{props.about}</p>
+            <p>{this.props.about}</p>
           </div>
-          <div className={classes.Education}>
-            <h2>Education</h2>
-            <div>
-              <h3>2016 – Present</h3>
-              <p><strong>Metropolia University of Applied Sciences</strong></p>
-              <p>Major: Information technology (Mobile solution)</p>
+          <div className={classes.Experience}>
+            {/* Bounding box for the Timeline */}
+            <h2>Experience</h2>
+            <div className={classes.Timeline}>
+              <HorizontalTimeline
+                  index={this.state.value}
+                  labelWidth={100}
+                  styles={timelineStyles}
+                  indexClick={(index) => {
+                    this.setState({value: index, previous: this.state.value});
+                  }}
+                  values={DATES}/>
             </div>
-            <div>
-              <h3>2012 – 2015</h3>
-              <p><strong>Hanoi - Amsterdam High school for the Gifted</strong>
-              </p>
-              <p>Major: Physics</p>
+            <div className='text-center'>
+              {/* any arbitrary component can go here */}
+              <h3>{workExps[this.state.value].title}</h3>
+              <p className={classes.Subtitle}>{workExps[this.state.value].subtitle}</p>
+              {this.renderDuration()}
+              <p className={classes.Note}>{workExps[this.state.value].location}</p>
             </div>
           </div>
           <div className={classes.Languages}>
-            <h2>Languages</h2>
+            <h2>Language</h2>
             <div>
               <h3>Vietnamese</h3>
               <p>Mother tongue</p>
@@ -33,8 +65,10 @@ const aboutme = (props) => {
               <p>Professional working proficiency</p>
             </div>
           </div>
-      </section>
-  );
+        </section>
+    );
+  }
+
 };
 
-export default aboutme;
+export default AboutMe;
