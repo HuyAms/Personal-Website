@@ -18,6 +18,10 @@
     max-height: 500px;
 }
 
+.ProjectImg:hover {
+    cursor: pointer;
+}
+
 .Project:before {
     content: "";
     width: 300px;

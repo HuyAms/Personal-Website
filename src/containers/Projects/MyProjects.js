@@ -11,9 +11,15 @@ import classes from './MyProjects.css';
 import NoResult from '../../components/Projects/NoResult/NoResult';
 import H2ON32 from '../../components/Projects/H2ON32/H2ON32';
 import Helmet from 'react-helmet';
+import ProjectImgModal from '../../components/Projects/ProjectImgModal/ProjectImgModal';
 
 
 class MyProjects extends Component {
+
+  state = {
+    showModal: false,
+    imgSource: ''
+  }
 
   componentDidMount() {
     if (this.props.projects.length === 0) {
@@ -29,9 +35,27 @@ class MyProjects extends Component {
     this.props.onSetProjectSearch(event.target.value)
   }
 
+  modalHideHandler = () => {
+    this.setState({
+      showModal: false,
+      imgSource: ''
+    })
+  }
+
+  handlePictureClicked = (imgUrl) => {
+    this.setState({
+      showModal: true,
+      imgSource: imgUrl
+    })
+  }
+
+
   render() {
+    let modal = this.state.showModal ? (
+        <ProjectImgModal modalClosed={this.modalHideHandler} imgSource={this.state.imgSource}/>
+        ) : null
+
     let projects = <Spinner/>;
-    console.log(this.props.h2ON32)
     if (!this.props.loading) {
       if (!this.props.error) {
         if (this.props.h2ON32) {
@@ -39,13 +63,12 @@ class MyProjects extends Component {
         } else if (this.props.projects.length === 0) {
           projects = <NoResult/>
         } else {
-          projects = <Projects projects={this.props.projects}/>;
+          projects = <Projects pictureClicked={this.handlePictureClicked} projects={this.props.projects}/>;
         }
       } else {
         projects = <p>Fail to load projects</p>
       }
     }
-
     return (
         <Aux>
           <Helmet>
@@ -56,6 +79,7 @@ class MyProjects extends Component {
             />
           </Helmet>
           <section className={classes.Filter}>
+            {modal}
             <Choices clicked={this.choiceHandler} numberOfProjects={this.props.projects.length}
                      activeFilterIndex={this.props.activeFilterIndex}/>
             <Search onChanged={this.searchHandler} searchValue={this.props.searchValue}/>
