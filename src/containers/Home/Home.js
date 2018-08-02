@@ -5,6 +5,7 @@ import TechnicalSkills from '../../components/TechnicalSkills/TechnicalSkills';
 import Aux from '../../hoc/ReactAux/ReactAux';
 import * as actions from '../../store/actions';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import Helmet from 'react-helmet';
 
 class Home extends Component {
 
@@ -22,6 +23,13 @@ class Home extends Component {
     if (this.props.myInfo) {
       home = (
           <Aux>
+              <Helmet>
+                  <title>Home</title>
+                  <meta
+                      name="description"
+                      content="Huy Trinh - Homepage"
+                  />
+              </Helmet>
             <Profile myInfo={this.props.myInfo}/>
             <TechnicalSkills/>
           </Aux>

@@ -10,6 +10,8 @@ import {getVisibleProjects} from '../../selectors';
 import classes from './MyProjects.css';
 import NoResult from '../../components/Projects/NoResult/NoResult';
 import H2ON32 from '../../components/Projects/H2ON32/H2ON32';
+import Helmet from 'react-helmet';
+
 
 class MyProjects extends Component {
 
@@ -46,6 +48,13 @@ class MyProjects extends Component {
 
     return (
         <Aux>
+          <Helmet>
+            <title>My Projects</title>
+            <meta
+                name="description"
+                content="Huy Trinh - My Projects Page"
+            />
+          </Helmet>
           <section className={classes.Filter}>
             <Choices clicked={this.choiceHandler} numberOfProjects={this.props.projects.length}
                      activeFilterIndex={this.props.activeFilterIndex}/>

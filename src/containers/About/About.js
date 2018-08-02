@@ -5,6 +5,7 @@ import AboutMe from '../../components/About/AboutMe/AboutMe';
 import Hobby from '../../components/About/Hobby/Hobby';
 import * as actions from '../../store/actions';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import Helmet from 'react-helmet';
 
 
 class About extends Component {
@@ -25,6 +26,13 @@ class About extends Component {
     if (this.props.myInfo && this.props.workExps.length > 0) {
       about = (
           <Aux>
+            <Helmet>
+              <title>AboutMe</title>
+              <meta
+                  name="description"
+                  content="Huy Trinh - AboutMe Page"
+              />
+            </Helmet>
             <AboutMe about={this.props.myInfo.about} workExps={this.props.workExps}/>
             <Hobby hobbies={this.props.myInfo.hobbies}/>
           </Aux>
