@@ -22,7 +22,8 @@ class MyProjects extends Component {
   }
 
   componentDidMount() {
-    if (this.props.projects.length === 0) {
+    if (this.props.projects.size === 0) {
+      console.log('FETCH PROJECTS');
       this.props.onFetchProject();
     }
   }
@@ -94,11 +95,11 @@ class MyProjects extends Component {
 const mapStateToProps = state => {
   return {
     projects: getVisibleProjects(state),
-    loading: state.projectReducer.loading,
-    error: state.projectReducer.error,
-    activeFilterIndex: state.projectReducer.activeFilterIndex,
-    searchValue: state.projectReducer.search,
-    h2ON32: state.projectReducer.h2ON32
+    loading: state.projectReducer.get('loading'),
+    error: state.projectReducer.get('error'),
+    activeFilterIndex: state.projectReducer.get('activeFilterIndex'),
+    searchValue: state.projectReducer.get('search'),
+    h2ON32: state.projectReducer.get('h2ON32')
   };
 };
 

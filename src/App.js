@@ -14,10 +14,8 @@ class App extends Component {
             <Aux>
                 <Helmet
                     titleTemplate="Huy Trinh - %s"
-                    defaultTitle="Huy Trinh - Software Developer"
-                >
+                    defaultTitle="Huy Trinh - Software Developer">
                     <meta name="description" content="Huy Trinh CV"/>
-
                 </Helmet>
                 <Layout>
                     <Switch>

@@ -1,12 +1,12 @@
+import { fromJS } from 'immutable';
 import * as actionTypes from '../actions/actionTypes';
-import updateObject from '../utility';
 
-const initialState = {
+const initialState = fromJS({
   positives: [],
   loading: false,
   error: null,
   sharing: false,
-};
+});
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -32,29 +32,23 @@ const reducer = (state = initialState, action) => {
 };
 
 const openPositiveForm = (state, action) => {
-  return updateObject(state, {
-    sharing: true,
-  });
+  return state.set('sharing', true);
 };
 
 const unSharingPositive = (state, action) => {
-  return updateObject(state, {
-    sharing: false,
-  });
+  return state.set('sharing', false);
 };
 
 const postPositiveStart = (state, action) => {
-  return updateObject(state, {
-    error: null,
-    loading: true
-  });
+  return state
+      .set('error', null)
+      .set('loading', true);
 };
 
 const postPositiveFail = (state, action) => {
-  return updateObject(state, {
-    error: action.error,
-    loading: false,
-  });
+  return state
+      .set('error', action.error)
+      .set('loading', false);
 };
 
 const postPositiveSuccess = (state, action) => {
@@ -63,32 +57,28 @@ const postPositiveSuccess = (state, action) => {
     id: action.id,
   };
 
-  return updateObject(state, {
-    positives: state.positives.concat(newPositive),
-    loading: false,
-    sharing: false
-  });
+  return state
+      .set('positives', newPositive)
+      .set('loading', false)
+      .set('sharing', false);
 };
 
 const fetchPositiveStart = (state, action) => {
-  return updateObject(state, {
-    error: null,
-    loading: true,
-  });
+  return state
+      .set('error', null)
+      .set('loading', true);
 };
 
 const fetchPositiveFail = (state, action) => {
-  return updateObject(state, {
-    error: action.error,
-    loading: false,
-  });
+  return state
+      .set('error', action.error)
+      .set('loading', false)
 };
 
 const fetchPositiveSuccess = (state, action) => {
-  return updateObject(state, {
-    positives: action.positives,
-    loading: false,
-  });
+  return state
+      .set('positives', action.positives)
+      .set('loading', false)
 };
 
 export default reducer;

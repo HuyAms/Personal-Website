@@ -49,10 +49,10 @@ class About extends Component {
 
 const mapStateToProps = state => {
   return {
-    myInfo: state.infoReducer.myInfo,
-    loading: state.infoReducer.loading,
-    error: state.infoReducer.error,
-    workExps: state.infoReducer.workExps
+    myInfo: state.infoReducer.get('myInfo'),
+    loading: state.infoReducer.get('loading'),
+    error: state.infoReducer.get('error'),
+    workExps: state.infoReducer.get('workExps')
   }
 }
 

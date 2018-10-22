@@ -1,8 +1,8 @@
 import {createSelector} from 'reselect';
 
-const getProjects = (state) => state.projectReducer.projects;
-const getProjectsFilter = (state) => state.projectReducer.activeFilterIndex;
-const getProjectSearch = (state) => state.projectReducer.search;
+const getProjects = (state) => state.projectReducer.get('projects');
+const getProjectsFilter = (state) => state.projectReducer.get('activeFilterIndex');
+const getProjectSearch = (state) => state.projectReducer.get('search');
 
 const isSearched = (project, search) => {
   return project.name.toLowerCase().includes(search.toLowerCase())

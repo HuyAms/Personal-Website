@@ -16,9 +16,9 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-  infoReducer: infoReducer,
-  projectReducer: projectReducer,
-  positiveReducer: positiveReducer
+  infoReducer,
+  projectReducer,
+  positiveReducer
 })
 
 const store = createStore(rootReducer, composeEnhancers(

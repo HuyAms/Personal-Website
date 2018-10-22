@@ -1,12 +1,12 @@
+import { fromJS } from 'immutable';
 import * as actionTypes from '../actions/actionTypes';
-import updateObject from '../utility';
 
-const initialState = {
+const initialState = fromJS({
   myInfo: null,
   loading: false,
   error: null,
   workExps: []
-};
+});
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -28,45 +28,39 @@ const reducer = (state = initialState, action) => {
 };
 
 const fetchExpStart = (state, action) => {
-  return updateObject(state, {
-    error: null,
-    loading: true,
-  });
+  return state
+      .set('error', null)
+      .set('loading', true);
 };
 
 const fetchExpFail = (state, action) => {
-  return updateObject(state, {
-    error: action.error,
-    loading: false,
-  });
+  return state
+      .set('error', action.error)
+      .set('loading', false);
 };
 
 const fetchExpSuccess = (state, action) => {
-  return updateObject(state, {
-    loading: false,
-    workExps: action.workExps,
-  });
+  return state
+      .set('loading', false)
+      .set('workExps', action.workExps);
 }
 
 const fetchInfoStart = (state, action) => {
-  return updateObject(state, {
-    error: null,
-    loading: true,
-  });
+  return state
+      .set('error', null)
+      .set('loading', true);
 };
 
 const fetchInfoFail = (state, action) => {
-  return updateObject(state, {
-    error: action.error,
-    loading: false,
-  });
+  return state
+      .set('error', action.error)
+      .set('loading', false);
 };
 
 const fetchInfoSuccess = (state, action) => {
-  return updateObject(state, {
-    loading: false,
-    myInfo: updateObject(state.myInfo, action.myInfo),
-  });
+  return state
+      .set('myInfo', action.myInfo)
+      .set('loading', false);
 };
 
 export default reducer;
