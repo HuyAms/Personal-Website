@@ -6,7 +6,7 @@
 :white_check_mark: Redux <br/>
 :white_check_mark: React Router <br/>
 :white_check_mark: Redux Thunk (v1.0.0) <br/>
-:white_check_mark: Redux Saga <br/>
+:white_check_mark: Redux Saga (v1.1.0) <br/>
 :white_check_mark: ImmutableJS <br/>
 :white_check_mark: Networking using axios <br/>
 :white_check_mark: Reselect<br/>
