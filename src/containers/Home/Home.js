@@ -46,9 +46,9 @@ class Home extends Component {
 
 const mapStateToProps = state => {
   return {
-    myInfo: state.infoReducer.myInfo,
-    loading: state.infoReducer.loading,
-    error: state.infoReducer.error,
+    myInfo: state.infoReducer.get('myInfo'),
+    loading: state.infoReducer.get('loading'),
+    error: state.infoReducer.get('error'),
   }
 }
 

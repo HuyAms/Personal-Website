@@ -1,14 +1,14 @@
+import { fromJS } from 'immutable';
 import * as actionTypes from '../actions/actionTypes';
-import updateObject from '../utility';
 
-const initialState = {
+const initialState = fromJS({
   projects: [],
   loading: false,
   error: null,
   activeFilterIndex: 0,
   search: '',
   h2ON32: false
-};
+});
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -29,42 +29,35 @@ const reducer = (state = initialState, action) => {
 
 const setProjectSearch = (state, action) => {
   if (action.search.toLowerCase() === 'nhung') {
-    return updateObject(state, {
-      search: action.search,
-      h2ON32: true
-    })
+    return state
+        .set('search', action.search)
+        .set('h2ON32', true);
   }
-  return updateObject(state, {
-    search: action.search,
-    h2ON32: false
-  })
+  return state
+      .set('search', action.search)
+      .set('h2ON32', false);
 }
 
 const setProjectFilter = (state, action) => {
-  return updateObject(state, {
-    activeFilterIndex: action.filter
-  })
+  return state.set('activeFilterIndex', action.filter)
 }
 
 const fetchProjectStart = (state, action) => {
-  return updateObject(state, {
-    error: null,
-    loading: true,
-  });
+  return state
+      .set('error', null)
+      .set('loading', true);
 };
 
 const fetchProjectFail = (state, action) => {
-  return updateObject(state, {
-    error: action.error,
-    loading: false,
-  });
+  return state
+      .set('error', action.error)
+      .set('loading', false);
 };
 
 const fetchProjectSuccess = (state, action) => {
-  return updateObject(state, {
-    projects: action.projects,
-    loading: false,
-  });
+  return state
+      .set('projects', action.projects)
+      .set('loading', false);
 };
 
 export default reducer;

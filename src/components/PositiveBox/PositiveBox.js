@@ -209,10 +209,10 @@ class PositiveBox extends Component {
 
 const mapStateToProps = state => {
   return {
-    positives: state.positiveReducer.positives,
-    loading: state.positiveReducer.loading,
-    error: state.positiveReducer.error,
-    sharing: state.positiveReducer.sharing,
+    positives: state.positiveReducer.get('positives'),
+    loading: state.positiveReducer.get('loading'),
+    error: state.positiveReducer.get('error'),
+    sharing: state.positiveReducer.get('sharing'),
   };
 };
 
