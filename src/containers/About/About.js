@@ -58,8 +58,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchInfo: () => dispatch(actions.fetchInfo()),
-    onFetchExp: () => dispatch(actions.fetchExp())
+    onFetchInfo: () => dispatch(actions.fetchInfoStart()),
+    onFetchExp: () => dispatch(actions.fetchExpStart())
   };
 };
 
