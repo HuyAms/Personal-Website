@@ -220,9 +220,9 @@ const mapDispatchToProps = dispatch => {
   return {
     openPositiveForm: () => dispatch(actions.openPositiveForm()),
     closePositiveForm: () => dispatch(actions.closePositiveForm()),
-    onFetchPositive: () => dispatch(actions.fetchPositive()),
+    onFetchPositive: () => dispatch(actions.fetchPositiveStart()),
     onPostPositive: (positiveData) => dispatch(
-        actions.postPositives(positiveData)),
+        actions.postPositiveStart(positiveData)),
   };
 };
 

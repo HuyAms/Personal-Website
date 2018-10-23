@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
+import createSagaMiddleware from 'redux-saga';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
@@ -12,6 +13,9 @@ import projectReducer from './store/reducer/project';
 import infoReducer from './store/reducer/info';
 import positiveReducer from './store/reducer/positivebox';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import {rootSaga} from './store/saga';
+
+const sagaMiddleware = createSagaMiddleware();
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -22,7 +26,7 @@ const rootReducer = combineReducers({
 })
 
 const store = createStore(rootReducer, composeEnhancers(
-    applyMiddleware(thunk)
+    applyMiddleware(thunk, sagaMiddleware)
 ));
 
 const app = (
@@ -34,6 +38,8 @@ const app = (
       </BrowserRouter>
     </Provider>
 );
+
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(app, document.getElementById('root'));
 registerServiceWorker();

@@ -105,7 +105,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchProject: () => dispatch(actions.fetchProject()),
+    onFetchProject: () => dispatch(actions.fetchProjectsStart()),
     onSetProjectFilter: (filter) => dispatch(actions.setProjectFilter(filter)),
     onSetProjectSearch: (search) => dispatch(actions.setProjectSearch(search))
   };

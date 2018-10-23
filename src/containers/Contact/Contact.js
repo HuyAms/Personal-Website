@@ -55,7 +55,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchInfo: () => dispatch(actions.fetchInfo()),
+    onFetchInfo: () => dispatch(actions.fetchInfoStart()),
   };
 };
 
