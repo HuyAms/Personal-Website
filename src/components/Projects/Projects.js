@@ -8,7 +8,6 @@ const projects = (props) => {
       props.projects.map(project =>
           (
               <Project
-                  pictureClicked={props.pictureClicked}
                   key={project.id}
                   img={project.imgPath}
                   name={project.name}

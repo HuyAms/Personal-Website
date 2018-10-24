@@ -12,7 +12,7 @@ const project = (props) => {
 
   let img = null;
   if (props.img !== "") {
-    img = <img onClick={() => props.pictureClicked(props.img)} className={classes.ProjectImg} src={props.img} alt={props.name}/>
+    img = <img className={classes.ProjectImg} src={props.img} alt={props.name}/>
   }
 
   return (
