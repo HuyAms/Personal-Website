@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetchExpSaga should dispatch the fetchExpFail action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/workexp.json",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`fetchExpSaga should dispatch the fetchExpSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/workexp.json",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`fetchInfoSaga should dispatch the fetchInfoFail action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/me.json",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`fetchInfoSaga should dispatch the fetchInfoSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/me.json",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

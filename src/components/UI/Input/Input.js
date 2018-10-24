@@ -15,17 +15,6 @@ const input = (props) => {
     inputClasses.push(classes.TextArea);
   }
 
-  // let errorText = null;
-  // if (inValid) {
-  //   errorText = (
-  //       <Fade bottom >
-  //         <div className={classes.InvalidAlert}>
-  //           {props.errorMessage}
-  //         </div>
-  //       </Fade>
-  //   );
-  // }
-
   let errorText = (
       <Fade bottom collapse when={inValid}>
         <div className={classes.InvalidAlert}>

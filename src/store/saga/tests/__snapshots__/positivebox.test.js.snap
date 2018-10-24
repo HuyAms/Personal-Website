@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetchPositiveSaga should dispatch the fetchPositiveFail action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/positive.json",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`fetchPositiveSaga should dispatch the fetchPositiveSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/positive.json",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`postPositivesSaga should dispatch the postPositiveFail action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/positive.json",
+      Array [],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`postPositivesSaga should dispatch the postPositiveSuccess action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/positive.json",
+      Array [],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

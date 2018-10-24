@@ -1,11 +1,11 @@
-import {put} from 'redux-saga/effects';
+import {put, call} from 'redux-saga/effects';
 import * as actions from '../actions/positivebox';
 import axios from "../../axious";
 
 export function* fetchPositiveSaga(action) {
   try {
 
-    const response = yield axios.get('/positive.json');
+    const response = yield call(axios.get, '/positive.json');
 
     const fetchedPositive = [];
     for (let key in response.data) {
@@ -26,7 +26,7 @@ export function* fetchPositiveSaga(action) {
 export function* postPositivesSaga(action) {
   try {
 
-    const response = yield axios.post('/positive.json', action.positiveData);
+    const response = yield call(axios.post, '/positive.json', action.positiveData);
 
     yield put(actions.postPositiveSuccess(action.positiveData, response.data.name));
 
