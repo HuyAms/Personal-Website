@@ -11,6 +11,7 @@
 :white_check_mark: Networking using axios <br/>
 :white_check_mark: Reselect<br/>
 :white_check_mark: Animation<br/>
+:white_check_mark: Test with Jest, Enzyme and Sinon<br/>
 
 ## Live Demo
 [Demo](https://minida-cccbf.firebaseapp.com/)
