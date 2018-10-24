@@ -46,12 +46,17 @@ class AboutMe extends Component {
                   }}
                   values={DATES}/>
             </div>
-            <div className='text-center'>
+            <div className={classes.ExperienceDetail}>
               {/* any arbitrary component can go here */}
-              <h3>{workExps[this.state.value].title}</h3>
-              <p className={classes.Subtitle}>{workExps[this.state.value].subtitle}</p>
-              {this.renderDuration()}
-              <p className={classes.Note}>{workExps[this.state.value].location}</p>
+              <div className={classes.ExperienceDetail_Image}>
+                <img src={workExps[this.state.value].logoUrl} alt=""/>
+              </div>
+              <div className={classes.ExperienceDetail_Detail}>
+                <h3>{workExps[this.state.value].title}</h3>
+                <p className={classes.Subtitle}>{workExps[this.state.value].subtitle}</p>
+                {this.renderDuration()}
+                <p className={classes.Note}>{workExps[this.state.value].location}</p>
+              </div>
             </div>
           </div>
           <div className={classes.Languages}>
