@@ -23,7 +23,7 @@ export const fetchPositiveStart = () => {
 export const postPositiveSuccess = (positiveData, id) => {
   return {
     type: actionTypes.POST_POSITIVE_SUCCESS,
-    positiveData: positiveData,
+    positiveData,
     id,
   };
 };

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1b00aef-7b57-472f-b6c7-db7a91e37f63" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/saga/tests/info.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/saga/tests/positivebox.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/saga/tests/project.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/saga/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/saga/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/saga/positivebox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/saga/positivebox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/positivebox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/positivebox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/saga/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/saga/project.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,8 +35,10 @@
           <entry key="css" value="31" />
           <entry key="html" value="1" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="93" />
+          <entry key="js" value="119" />
+          <entry key="json" value="1" />
           <entry key="png" value="1" />
+          <entry key="snap" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -42,19 +46,21 @@
           <entry key="CSS" value="31" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JavaScript" value="93" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="119" />
+          <entry key="Jest Snapshot" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="665" />
-          <entry key="js" value="4589" />
+          <entry key="js" value="5392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="665" />
-          <entry key="JavaScript" value="4589" />
+          <entry key="JavaScript" value="5392" />
         </counts>
       </usages-collector>
     </session>
@@ -100,38 +106,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/saga/info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/saga/positivebox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/store/saga/tests/project.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <folding>
+                <element signature="e#36#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/saga/project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -149,9 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>elementType</find>
-      <find>Order</find>
-      <find>label</find>
       <find>shouldValidate</find>
       <find>touched</find>
       <find>invalid</find>
@@ -179,11 +167,17 @@
       <find>transition</find>
       <find>renderModal</find>
       <find>projects</find>
+      <find>fetchProjectGeneratoro</find>
+      <find>fetchInfoGenerator</find>
+      <find>fetchPositiveGenerator</find>
     </findStrings>
     <replaceStrings>
       <replace>768</replace>
       <replace>1024</replace>
       <replace>workExps</replace>
+      <replace>fetchProjectGeneratoro</replace>
+      <replace>fetchProjectGenerator</replace>
+      <replace>fetchPositiveGenerator</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -192,9 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Projects/Projects.css" />
-        <option value="$PROJECT_DIR$/src/components/UI/Input/Input.css" />
-        <option value="$PROJECT_DIR$/src/containers/Projects/MyProjects.css" />
         <option value="$PROJECT_DIR$/src/components/Projects/Choices/Choices.css" />
         <option value="$PROJECT_DIR$/src/components/Projects/Search/Search.css" />
         <option value="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
@@ -235,14 +226,17 @@
         <option value="$PROJECT_DIR$/src/containers/About/About.js" />
         <option value="$PROJECT_DIR$/src/containers/Projects/MyProjects.js" />
         <option value="$PROJECT_DIR$/src/components/PositiveBox/PositiveBox.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/positivebox.js" />
         <option value="$PROJECT_DIR$/src/store/actions/info.js" />
         <option value="$PROJECT_DIR$/src/store/actions/project.js" />
         <option value="$PROJECT_DIR$/src/selectors/index.js" />
         <option value="$PROJECT_DIR$/src/store/saga/index.js" />
         <option value="$PROJECT_DIR$/src/store/saga/info.js" />
+        <option value="$PROJECT_DIR$/src/store/saga/tests/info.test.js" />
         <option value="$PROJECT_DIR$/src/store/saga/positivebox.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/positivebox.js" />
         <option value="$PROJECT_DIR$/src/store/saga/project.js" />
+        <option value="$PROJECT_DIR$/src/store/saga/tests/positivebox.test.js" />
+        <option value="$PROJECT_DIR$/src/store/saga/tests/project.test.js" />
       </list>
     </option>
   </component>
@@ -269,9 +263,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -320,7 +315,22 @@
               <item name="Personal-Website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Personal-Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Personal-Website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="saga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Personal-Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Personal-Website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="saga" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,6 +347,7 @@
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -366,6 +377,86 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Jest.fetchProjectSaga">
+    <configuration name="fetchPositiveSaga" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/store/saga/tests/positivebox.test.js" />
+      <test-names>
+        <test-name value="fetchPositiveSaga" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="fetchPositiveSaga.should dispatch the fetchPositiveSuccess action if it requests the data successfully" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/saga/tests/positivebox.test.js" />
+      <test-names>
+        <test-name value="fetchPositiveSaga" />
+        <test-name value="should dispatch the fetchPositiveSuccess action if it requests the data successfully" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="fetchProjectSaga" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/store/saga/tests/project.test.js" />
+      <test-names>
+        <test-name value="fetchProjectSaga" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="fetchProjectSaga.should dispatch the fetchProjectsSuccess action if it requests the data successfully" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/saga/tests/project.test.js" />
+      <test-names>
+        <test-name value="fetchProjectSaga" />
+        <test-name value="should dispatch the fetchProjectsSuccess action if it requests the data successfully" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="postPositivesSaga" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/store/saga/tests/positivebox.test.js" />
+      <test-names>
+        <test-name value="postPositivesSaga" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.fetchProjectSaga" />
+      <item itemvalue="Jest.fetchPositiveSaga" />
+      <item itemvalue="Jest.postPositivesSaga" />
+      <item itemvalue="Jest.fetchProjectSaga.should dispatch the fetchProjectsSuccess action if it requests the data successfully" />
+      <item itemvalue="Jest.fetchPositiveSaga.should dispatch the fetchPositiveSuccess action if it requests the data successfully" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.fetchProjectSaga" />
+        <item itemvalue="Jest.fetchPositiveSaga.should dispatch the fetchPositiveSuccess action if it requests the data successfully" />
+        <item itemvalue="Jest.fetchProjectSaga.should dispatch the fetchProjectsSuccess action if it requests the data successfully" />
+        <item itemvalue="Jest.fetchPositiveSaga" />
+        <item itemvalue="Jest.postPositivesSaga" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -388,8 +479,40 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="postPositivesSaga - 2018.10.24 at 06h 50m 40s.xml">
+      <configuration name="postPositivesSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchPositiveSaga - 2018.10.24 at 06h 50m 54s.xml">
+      <configuration name="fetchPositiveSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchProjectSaga - 2018.10.24 at 06h 54m 57s.xml">
+      <configuration name="fetchProjectSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchProjectSaga - 2018.10.24 at 06h 56m 05s.xml">
+      <configuration name="fetchProjectSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchProjectSaga_should_dispatch_the_fetchProjectsSuccess_action_if_it_requests_the_data_successfully - 2018.10.24 at 06h 56m 18s.xml">
+      <configuration name="fetchProjectSaga.should dispatch the fetchProjectsSuccess action if it requests the data successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchPositiveSaga_should_dispatch_the_fetchPositiveSuccess_action_if_it_requests_the_data_successfully - 2018.10.24 at 06h 58m 44s.xml">
+      <configuration name="fetchPositiveSaga.should dispatch the fetchPositiveSuccess action if it requests the data successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchPositiveSaga_should_dispatch_the_fetchPositiveSuccess_action_if_it_requests_the_data_successfully - 2018.10.24 at 06h 59m 18s.xml">
+      <configuration name="fetchPositiveSaga.should dispatch the fetchPositiveSuccess action if it requests the data successfully" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchProjectSaga - 2018.10.24 at 07h 00m 23s.xml">
+      <configuration name="fetchProjectSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchProjectSaga - 2018.10.24 at 07h 02m 13s.xml">
+      <configuration name="fetchProjectSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="fetchProjectSaga - 2018.10.24 at 07h 02m 46s.xml">
+      <configuration name="fetchProjectSaga" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269860000" />
+    <option name="totallyTimeSpent" value="274515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -398,15 +521,15 @@
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.50158226" side_tool="true" weight="0.2717949" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49841774" visible="true" weight="0.20092532" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49841774" visible="true" weight="0.20092532" />
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.3299435" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49966952" weight="0.52340424" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49966952" visible="true" weight="0.729078" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5009914" side_tool="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32871288" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32765958" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.4990086" weight="0.11253561" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.04539007" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32056737" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -424,34 +547,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Projects/NoResult/NoResult.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Projects/NoResult/NoResult.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Projects/H2ON32/H2ON32.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Projects/H2ON32/H2ON32.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Home/Loadable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -561,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/utility.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -579,6 +667,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="68" column="28" lean-forward="true" selection-start-line="66" selection-start-column="2" selection-end-line="68" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -607,6 +698,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -631,6 +725,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,6 +735,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -683,41 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/positivebox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/selectors/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/saga/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,32 +806,85 @@
     <entry file="file://$PROJECT_DIR$/config/polyfills.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/saga/tests/__snapshots__/info.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/saga/info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/saga/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/positivebox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/saga/positivebox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/saga/tests/positivebox.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/saga/tests/info.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" selection-start-line="8" selection-end-line="32" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/saga/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/saga/tests/project.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#36#75#0" expanded="true" />
           </folding>
         </state>
       </provider>

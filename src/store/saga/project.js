@@ -5,7 +5,7 @@ import axios from "../../axious";
 export function* fetchProjectSaga(action) {
   try {
 
-    const response = yield call(axios.get, '/projects.json', action.positiveData);
+    const response = yield call(axios.get, '/projects.json');
 
     const fetchedProject = [];
     for (let key in response.data) {
