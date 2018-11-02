@@ -2,6 +2,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../../../assets/images/magic.jpg") ;
     background-size: cover;
+    background-position: top;
     min-height: 100vh;
     background-attachment: fixed;
     color: #ffffff;

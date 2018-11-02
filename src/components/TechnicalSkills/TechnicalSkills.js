@@ -12,10 +12,19 @@ import Swift from '../../assets/images/swift.png';
 import TypeScript from '../../assets/images/typescript.png';
 import Ionic from '../../assets/images/ionic.png';
 import ReactLogo from '../../assets/images/react.png';
+import videoBgMp4 from '../../assets/videos/background.mp4';
+import videoBgWebm from '../../assets/videos/background.webm';
 
 const technicalSkills = () => {
   return (
       <section className={classes.TechnicalSkillsContent}>
+        <div className={classes.BackgroundVideo}>
+          <video className={classes.BackgroundVideoContent} autoPlay={true} muted={true} loop={true}>
+            <source src={videoBgMp4} type="video/mp4"/>
+            <source src={videoBgWebm} type="video/mp4"/>
+          </video>
+          Your browser is not supported
+        </div>
         <h2>Technical Skills</h2>
           <div className={classes.TechnicalSkills}>
             <figure>
