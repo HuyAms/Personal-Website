@@ -17,7 +17,9 @@ const project = (props) => {
 
   return (
         <section className={classes.ProjectsContent}>
-          {img}
+          <a href={props.link} target="_blank">
+            {img}
+          </a>
           <div className={classes.Project}>
             <h2>{props.name}</h2>
             <p className={classes.ProjectType}>{props.type}</p>
