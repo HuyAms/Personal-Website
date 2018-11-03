@@ -11,8 +11,7 @@ const profile = (props) => {
             <h1>Huy Trinh</h1>
             <h2>{props.myInfo.title}</h2>
             <p>{props.myInfo.description}</p>
-            <a target="_blank" rel="noopener" href={props.myInfo.cv}>Download My
-              CV</a>
+            <a target="_blank" rel="noopener" href={props.myInfo.cv}>Download My CV</a>
           </div>
         </Fade>
         <img className={classes.ProfileImage} src={profileImg}

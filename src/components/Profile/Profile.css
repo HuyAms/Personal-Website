@@ -75,6 +75,7 @@ and (orientation: portrait) {
         margin-top: 0px;
         margin-left: 0px;
         min-width: 300px;
+        text-align: center;
     }
 
     .ProfileImage {
