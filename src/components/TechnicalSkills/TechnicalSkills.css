@@ -52,11 +52,12 @@
     height: 120px;
     width: auto;
     opacity: 0.7;
-    transition: opacity 0.2s;
+    transition: all 0.2s;
 }
 
 .TechnicalSkills figure img:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1024px) {

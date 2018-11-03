@@ -17,14 +17,18 @@
 .Profile a:visited {
     text-decoration: none;
     color: #555;
-    transition: color 0.2s;
     font-weight: bold;
-    display: block;
+    display: inline-block;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #555 50%);
+    background-size: 250%;
+    transition: all .5s;
 }
 
 .Profile a:hover,
 .Profile a:active {
-    color: #000000;
+    color: white;
+    background-position: 100%;
+    padding: 5px;
 }
 
 .ProfileImage {
