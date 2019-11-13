@@ -62,12 +62,12 @@ class AboutMe extends Component {
           <div className={classes.Languages}>
             <h2>Language</h2>
             <div>
-              <h3>Vietnamese</h3>
-              <p>Mother tongue</p>
-            </div>
-            <div>
               <h3>English</h3>
               <p>Professional working proficiency</p>
+            </div>
+            <div>
+              <h3>Vietnamese</h3>
+              <p>Mother tongue</p>
             </div>
           </div>
         </section>
