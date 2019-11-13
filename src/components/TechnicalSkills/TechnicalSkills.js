@@ -10,7 +10,7 @@ import Kotlin from '../../assets/images/kotlin.png';
 import Nodejs from '../../assets/images/nodejs.svg';
 import Swift from '../../assets/images/swift.png';
 import TypeScript from '../../assets/images/typescript.png';
-import Ionic from '../../assets/images/ionic.png';
+import Wordpress from '../../assets/images/wordpress.svg';
 import ReactLogo from '../../assets/images/react.png';
 
 const technicalSkills = () => {
@@ -19,28 +19,24 @@ const technicalSkills = () => {
         <h2>Technical Skills</h2>
           <div className={classes.TechnicalSkills}>
             <figure>
-              <img src={Android} alt="Android"/>
-              <p>Android</p>
-            </figure>
-            <figure>
-              <img src={Ios} alt="iOS"/>
-              <p>iOS</p>
+              <img src={ReactLogo} alt="React"/>
+              <p>React</p>
             </figure>
             <figure>
               <img src={Nodejs} alt="NodeJS"/>
               <p>NodeJS</p>
             </figure>
             <figure>
-              <img src={ReactLogo} alt="React"/>
-              <p>React</p>
-            </figure>
-            <figure>
-              <img src={Ionic} alt="Ionic"/>
-              <p>Ionic</p>
+              <img src={Wordpress} alt="Wordpress"/>
+              <p>Wordpress</p>
             </figure>
             <figure>
               <img src={TypeScript} alt="TypeScript"/>
               <p>TypeScript</p>
+            </figure>
+            <figure>
+              <img src={Javascript} alt="JavaScript"/>
+              <p>JavaScript</p>
             </figure>
             <figure>
               <img src={Html} alt="HTML"/>
@@ -51,20 +47,24 @@ const technicalSkills = () => {
               <p>CSS</p>
             </figure>
             <figure>
-              <img src={Javascript} alt="JavaScript"/>
-              <p>JavaScript</p>
+              <img src={Swift} alt="Swift"/>
+              <p>Swift</p>
             </figure>
             <figure>
-              <img src={Java} alt="Java"/>
-              <p>Java</p>
+              <img src={Ios} alt="iOS"/>
+              <p>iOS</p>
+            </figure>
+            <figure>
+              <img src={Android} alt="Android"/>
+              <p>Android</p>
             </figure>
             <figure>
               <img src={Kotlin} alt="Kotlin"/>
               <p>Kotlin</p>
             </figure>
             <figure>
-              <img src={Swift} alt="Swift"/>
-              <p>Swift</p>
+              <img src={Java} alt="Java"/>
+              <p>Java</p>
             </figure>
           </div>
       </section>
