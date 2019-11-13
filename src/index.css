@@ -11,15 +11,15 @@ body {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 160%;
+  line-height: 1.67;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
 h1 {
+  margin: 0px;
   font-size: 6em;
-  margin-bottom: 70px;
-  margin-top: 50px;
+  margin-bottom: 10px;
   word-spacing: 4px;
   letter-spacing: 1px;
   color: #444;
@@ -28,7 +28,7 @@ h1 {
 h2 {
   font-size: 1.8em;
   word-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   letter-spacing: 1px;
 }
 
